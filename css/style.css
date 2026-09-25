@@ -1,0 +1,222 @@
+/* Custom Properties */
+:root {
+  --color-bg: #F7F8FA;
+  --color-text: #1F2933;
+  --color-muted: #525E6A;
+  --color-link: #2F5DA8;
+  --color-link-hover: #1E4A8A;
+  --color-link-visited: #4A5568;
+  --color-border: #E5E7EB;
+  --color-border-hover: #D1D5DB;
+  --color-surface: #F0F2F5;
+  --color-badge-bg: #D1FAE5;
+  --color-badge: #065F46;
+  --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'IBM Plex Serif', Georgia, serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+/* Reset & Base */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+html { font-size: 100%; -webkit-text-size-adjust: 100%; }
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--color-link);
+  color: white;
+  border-radius: 0.25rem;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 1rem;
+  color: white;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-text);
+}
+
+h1 { font-size: 2.5rem; margin-bottom: 1.5rem; }
+h2 { font-size: 1.75rem; margin-top: 2rem; margin-bottom: 1rem; }
+h3 { font-size: 1.25rem; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+p { margin-bottom: 1rem; }
+small, .small { font-size: 0.875rem; }
+
+/* Links */
+a { color: var(--color-link); text-decoration: none; }
+a:hover { color: var(--color-link-hover); text-decoration: underline; }
+a:visited { color: var(--color-link-visited); }
+
+/* Layout */
+.page-container { max-width: 70rem; margin: 0 auto; padding: 0 1.5rem; width: 100%; }
+.content { max-width: 65ch; margin: 0 auto; padding: 2rem 0; }
+main { flex: 1; }
+
+/* Navigation */
+.nav { padding: 1.375rem 0; border-bottom: 1px solid var(--color-border); }
+.nav-inner { display: flex; flex-wrap: wrap; align-items: baseline; gap: 1.5rem; }
+.nav-name {
+  font-family: var(--font-serif);
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-decoration: none;
+  margin-right: auto;
+}
+.nav-name:hover { color: var(--color-text); text-decoration: none; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 1.5rem; list-style: none; }
+.nav-links a { color: var(--color-muted); font-size: 1rem; font-weight: 500; text-decoration: none; }
+.nav-links a:hover { color: var(--color-link); text-decoration: underline; }
+.nav-links a.active { color: var(--color-link); }
+
+/* Footer */
+.footer { padding: 2rem 0; border-top: 1px solid var(--color-border); margin-top: auto; }
+.footer-inner { color: var(--color-muted); font-size: 0.875rem; text-align: center; }
+
+/* Home Page */
+.home-intro { display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start; }
+.home-text { flex: 1; min-width: 280px; }
+.portrait-column { flex-shrink: 0; text-align: center; }
+.portrait { width: 16rem; height: 16rem; background-color: var(--color-border); }
+.portrait img { width: 100%; height: 100%; object-fit: cover; }
+.social-links { margin-top: 0.5rem; font-size: 0.875rem; }
+
+/* Section Headers */
+.section-header { margin-bottom: 2rem; }
+
+/* Badges */
+.status-badge {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--color-badge-bg);
+  color: var(--color-badge);
+  text-transform: uppercase;
+}
+
+/* Year Navigation */
+.year-nav { margin-bottom: 1.5rem; font-size: 0.875rem; color: var(--color-muted); }
+
+/* Year Groups */
+.year-group { margin-bottom: 2rem; }
+.year-group h2 { font-size: 1.25rem; margin-bottom: 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-border); }
+
+/* Bib Entries */
+.bib-entry { padding: 1rem 0; padding-left: 2rem; text-indent: -2rem; border-bottom: 1px solid var(--color-border); }
+.bib-entry .title { font-weight: 500; color: var(--color-link); text-decoration: none; }
+.bib-entry .title:hover { text-decoration: underline; color: var(--color-link-hover); }
+.bib-entry .venue { font-style: italic; }
+.bib-entry .year { color: var(--color-muted); }
+.bib-entry .status-badge { text-indent: 0; vertical-align: 0.125rem; }
+.links { display: block; margin-top: 0.25rem; font-size: 0.875rem; }
+.bib-entry .links { padding-left: 2rem; }
+.selected-publications .bib-entry .authors em { font-style: normal; }
+
+/* Detail Pages */
+.detail-meta { color: var(--color-muted); margin-bottom: 1.5rem; }
+.detail-meta p { margin-bottom: 0.25rem; }
+
+.action-links { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.5rem 0; }
+.action-links a {
+  padding: 0.5rem 1rem;
+  background-color: var(--color-link);
+  color: white;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.action-links a:hover { background-color: var(--color-link-hover); text-decoration: none; color: white; }
+.action-links a:visited { color: white; }
+
+/* BibTeX Block */
+.bibtex-container { position: relative; margin: 1.5rem 0; }
+.bibtex-block {
+  background-color: var(--color-surface);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.bibtex-copy {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--color-border);
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  color: var(--color-muted);
+}
+.bibtex-copy:hover { background-color: var(--color-border-hover); }
+
+/* Projects */
+.project-card { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--color-border); }
+.project-card:last-child { border-bottom: none; }
+.project-card h3 { margin-top: 0; }
+.project-meta { font-size: 0.875rem; color: var(--color-muted); margin-bottom: 0.5rem; }
+
+/* Contact */
+.contact-info { margin-bottom: 2rem; }
+.contact-info dt { font-weight: 500; color: var(--color-muted); margin-top: 1rem; }
+.contact-info dd { margin-left: 0; }
+
+/* 404 */
+.error-page { text-align: center; padding: 4rem 0; }
+.error-page h1 { font-size: 4rem; margin-bottom: 1rem; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  .content { max-width: 55ch; }
+  .home-intro { flex-direction: column-reverse; }
+  .portrait-column { width: 100%; }
+  .portrait { max-width: 14rem; height: auto; aspect-ratio: 1; margin: 0 auto; }
+  .nav-inner, .nav-links { gap: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .content { max-width: 40ch; }
+  .page-container { padding: 0 1rem; }
+}
+
+/* Print */
+@media print {
+  body { background: white; color: black; font-size: 12pt; }
+  .nav, .footer, .year-nav, .bibtex-copy, .action-links { display: none; }
+  .page-container, .content { max-width: 100%; padding: 0; margin: 0; }
+  a { color: black; text-decoration: underline; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; }
+  a[href^="mailto"]::after { content: " (" attr(href) ")"; font-size: 0.8em; }
+  .portrait { width: 10rem; height: 10rem; }
+  .bibtex-block { background: none; border: 1px solid black; }
+  h1, h2, h3 { page-break-after: avoid; }
+  .bib-entry, .project-card { page-break-inside: avoid; }
+}

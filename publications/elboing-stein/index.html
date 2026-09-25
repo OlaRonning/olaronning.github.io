@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  
+
+
+<title>ELBOing Stein: Variational Bayes with Stein Mixture Inference | Ola Rønning</title>
+
+
+<meta name="description" content="Academic website of Ola Rønning">
+
+
+
+
+<link rel="canonical" href="https://ronning.io/publications/elboing-stein/">
+<link rel="icon" href="https://olaronning.github.io/img/favicon.svg" type="image/svg+xml">
+
+<!-- Open Graph -->
+<meta property="og:title" content="ELBOing Stein: Variational Bayes with Stein Mixture Inference">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ronning.io/publications/elboing-stein/">
+
+<meta property="og:description" content="Academic website of Ola Rønning">
+
+
+<!-- Atom Feed -->
+<link rel="alternate" type="application/atom+xml" title="Ola Rønning" href="https://olaronning.github.io/atom.xml">
+
+<!-- Fonts (self-hosted) -->
+<link rel="preconnect" href="https://olaronning.github.io">
+<link rel="stylesheet" href="https://olaronning.github.io/css/fonts.css">
+
+<!-- Styles -->
+<link rel="stylesheet" href="https://olaronning.github.io/css/style.css">
+
+  
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "ELBOing Stein: Variational Bayes with Stein Mixture Inference",
+  "headline": "ELBOing Stein: Variational Bayes with Stein Mixture Inference",
+  "datePublished": "2025",
+  "author": [{"@type": "Person", "name": "Ola Rønning"}, {"@type": "Person", "name": "Eric Nalisnick"}, {"@type": "Person", "name": "Christophe Ley"}, {"@type": "Person", "name": "Thomas Hamelryck"}],
+  "publisher": {"@type": "Organization", "name": "International Conference on Learning Representation"},
+  "url": "https:&#x2F;&#x2F;olaronning.github.io&#x2F;files&#x2F;ELBOing_Stein.pdf",
+  "mainEntityOfPage": "https:&#x2F;&#x2F;olaronning.github.io&#x2F;publications&#x2F;elboing-stein&#x2F;"
+}
+</script>
+
+</head>
+<body>
+  
+<nav class="nav" aria-label="Main">
+  <div class="page-container">
+    <div class="nav-inner">
+      <a href="https://olaronning.github.io" class="nav-name">Ola Rønning</a>
+      <ul class="nav-links">
+        <li><a href="https://olaronning.github.io">Home</a></li>
+        <li><a href="https://olaronning.github.io/projects">Projects</a></li>
+        <li><a href="https://olaronning.github.io/publications" class="active">Publications</a></li>
+        
+        <li><a href="https://olaronning.github.io/files/cv.pdf">CV</a></li>
+        <li><a href="https://olaronning.github.io/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <main id="main">
+    <div class="page-container">
+      <div class="content">
+        
+<article>
+  <h1>ELBOing Stein: Variational Bayes with Stein Mixture Inference</h1>
+
+  <div class="detail-meta">
+    
+    <p><strong>Venue:</strong> International Conference on Learning Representation</p>
+    
+    
+    <p><strong>Year:</strong> 2025</p>
+    
+    <p><strong>Collaborators:</strong> Ola Rønning, Eric Nalisnick, Christophe Ley, Thomas Hamelryck</p>
+    
+  </div>
+
+  
+  <div class="links">
+    [<a href="&#x2F;files&#x2F;ELBOing_Stein.pdf">PDF</a>]
+    [<a href="https:&#x2F;&#x2F;github.com&#x2F;aleatory-science&#x2F;smi_experiments">Code</a>]
+    
+    
+  </div>
+  
+
+  
+  <section>
+    <h2>Abstract</h2>
+    <p>Stein variational gradient descent (SVGD) (Liu &amp; Wang, 2016) performs approx-
+imate Bayesian inference by representing the posterior with a set of particles.
+However, SVGD suffers from variance collapse, i.e. poor predictions due to under-
+estimating uncertainty (Ba et al., 2021), even for moderately-dimensional models
+such as small Bayesian neural networks (BNNs). To address this issue, we gen-
+eralize SVGD by letting each particle parameterize a component distribution in
+a mixture model. Our method, Stein Mixture Inference (SMI), optimizes a lower
+bound to the evidence (ELBO) and introduces user-specified guides parameterized
+by particles. SMI extends the Nonlinear SVGD framework (Wang &amp; Liu, 2019) to
+the case of variational Bayes. SMI effectively avoids variance collapse, judging by
+a previously described test developed for this purpose, and performs well on stan-
+dard data sets. In addition, SMI requires considerably fewer particles than SVGD
+to accurately estimate uncertainty for small BNNs. The synergistic combination of
+NSVGD, ELBO optimization and user-specified guides establishes a promising
+approach towards variational Bayesian inference in the case of tall and wide data.
+This is the abstract of the sample publication.</p>
+
+  </section>
+  
+
+  
+  <section>
+    <h2>BibTeX</h2>
+    <div class="bibtex-container">
+      <pre class="bibtex-block" id="bibtex">@inproceedings{
+ rnning2025elboing,
+ title={{ELBO}ing Stein: Variational Bayes with Stein Mixture Inference},
+ author={Ola R\o nning and Eric Nalisnick and Christophe Ley and Padhraic Smyth and Thomas Hamelryck},
+ jbooktitle={The Thirteenth International Conference on Learning Representations},
+ year={2025},
+ url={https:&#x2F;&#x2F;openreview.net&#x2F;forum?id=2rBLbNJwBm}
+}
+</pre>
+      <button class="bibtex-copy" onclick="copyBibtex()">Copy</button>
+    </div>
+  </section>
+  
+</article>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+  <div class="page-container">
+    <div class="footer-inner">
+      <p>&copy; 2026 Ola Rønning</p>
+    </div>
+  </div>
+</footer>
+
+
+  
+
+<script src="https://olaronning.github.io/js/copy-bibtex.js"></script>
+
+
+</body>
+</html>
