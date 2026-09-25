@@ -136,6 +136,11 @@ main { flex: 1; }
 .bib-entry .links { padding-left: 2rem; }
 .selected-publications .bib-entry .authors em { font-style: normal; }
 
+/* News */
+.news-list { list-style: none; padding: 0; margin: 0; }
+.news-list li { display: grid; grid-template-columns: 6.5rem 1fr; gap: 0.5rem; padding: 0.5rem 0; border-bottom: 1px solid var(--color-border); }
+.news-date { color: var(--color-muted); font-variant-numeric: tabular-nums; }
+
 /* Detail Pages */
 .detail-meta { color: var(--color-muted); margin-bottom: 1.5rem; }
 .detail-meta p { margin-bottom: 0.25rem; }
