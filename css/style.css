@@ -115,6 +115,8 @@ main { flex: 1; }
   background: var(--color-badge-bg);
   color: var(--color-badge);
   text-transform: uppercase;
+  vertical-align: 0.125rem;
+  text-indent: 0;
 }
 
 /* Year Navigation */
@@ -130,7 +132,6 @@ main { flex: 1; }
 .bib-entry .title:hover { text-decoration: underline; color: var(--color-link-hover); }
 .bib-entry .venue { font-style: italic; }
 .bib-entry .year { color: var(--color-muted); }
-.bib-entry .status-badge { text-indent: 0; vertical-align: 0.125rem; }
 .links { display: block; margin-top: 0.25rem; font-size: 0.875rem; }
 .bib-entry .links { padding-left: 2rem; }
 .selected-publications .bib-entry .authors em { font-style: normal; }
