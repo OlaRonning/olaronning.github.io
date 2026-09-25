@@ -13,11 +13,7 @@
         <updated>2026-09-23T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://olaronning.github.io/publications/fp-music-auv-localization/"/>
@@ -39,7 +35,7 @@ across simulated sea states demonstrate that FP-MUSIC substantially reduces
 localization error relative to uncompensated methods and sustains robust 3-D
 tracking and vehicle orientation estimation under wave-induced motion. At
 moderate sea state, FP-MUSIC increases the 2-m beacon-separation accuracy from
-approximately 45% to 75%.&lt;&#x2F;p&gt;
+approximately 45% to 75%.&lt;/p&gt;
 </content>
         
     </entry>
@@ -49,11 +45,7 @@ approximately 45% to 75%.&lt;&#x2F;p&gt;
         <updated>2026-09-22T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://olaronning.github.io/publications/proper-scoring-odometry/"/>
@@ -64,7 +56,7 @@ score the estimated track against a ground truth. Unfortunately, scoring uses
 point metrics, such as the root mean square error, that ignore the covariance
 matrix which estimators like filters and smoothers already report. Using the
 covariance matters for two reasons. First, the covariance encodes the
-estimator&#x27;s uncertainty, so it tells us whether the estimator trusts its own
+estimator&#39;s uncertainty, so it tells us whether the estimator trusts its own
 output. An overconfident estimator will not report itself lost. Second, the
 covariance weights the error in each direction of the estimate. Without the
 covariance, an estimator is unduly penalized for a high error in an uncertain
@@ -80,7 +72,7 @@ quality of the translational component of ground-based LiDAR-inertial odometry.
 Across four filters we find overconfidence - the worst case reports centimeter
 certainty with kilometer error. Knowing the filters are overconfident, we
 investigate the mechanism. The investigation traces overconfidence to filters
-crediting LiDAR measurements with more new information than they carry.&lt;&#x2F;p&gt;
+crediting LiDAR measurements with more new information than they carry.&lt;/p&gt;
 </content>
         
     </entry>
@@ -90,19 +82,15 @@ crediting LiDAR measurements with more new information than they carry.&lt;&#x2F
         <updated>2026-03-01T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://olaronning.github.io/projects/ve25-pose-estimation/"/>
         <id>https://olaronning.github.io/projects/ve25-pose-estimation/</id>
         
-        <content type="html" xml:base="https://olaronning.github.io/projects/ve25-pose-estimation/">&lt;p&gt;Underwater robots have no reliable GPS, and visual localization breaks down in turbid, low-light water. Sonar is the natural fallback, though acoustic sensing brings its own difficulties, from low signal-to-noise to elevation ambiguity, that make good measurement models hard to build. Purely data-driven pose regression is one route, but it depends on large labeled datasets that are scarce underwater.&lt;&#x2F;p&gt;
-&lt;p&gt;This project develops probabilistic pose estimation from sonar: Bayesian state estimation on the pose manifold, with uncertainty propagated coherently from sensing through to decision.&lt;&#x2F;p&gt;
-&lt;p&gt;It will deliver methods for sonar-based SLAM and localization and field-validated systems that run them. Benchmarking in the wild requires ground truth that turned out not to exist, so the project also builds the algorithms and hardware rigs to capture it, along with the datasets they produce.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://olaronning.github.io/projects/ve25-pose-estimation/">&lt;p&gt;Underwater robots have no reliable GPS, and visual localization breaks down in turbid, low-light water. Sonar is the natural fallback, though acoustic sensing brings its own difficulties, from low signal-to-noise to elevation ambiguity, that make good measurement models hard to build. Purely data-driven pose regression is one route, but it depends on large labeled datasets that are scarce underwater.&lt;/p&gt;
+&lt;p&gt;This project develops probabilistic pose estimation from sonar: Bayesian state estimation on the pose manifold, with uncertainty propagated coherently from sensing through to decision.&lt;/p&gt;
+&lt;p&gt;It will deliver methods for sonar-based SLAM and localization and field-validated systems that run them. Benchmarking in the wild requires ground truth that turned out not to exist, so the project also builds the algorithms and hardware rigs to capture it, along with the datasets they produce.&lt;/p&gt;
 </content>
         
     </entry>
@@ -112,19 +100,15 @@ crediting LiDAR measurements with more new information than they carry.&lt;&#x2F
         <updated>2025-07-01T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://olaronning.github.io/projects/ddsa25-fellowship/"/>
         <id>https://olaronning.github.io/projects/ddsa25-fellowship/</id>
         
-        <content type="html" xml:base="https://olaronning.github.io/projects/ddsa25-fellowship/">&lt;p&gt;Real-time Bayesian inference remains difficult in the non-Gaussian, high-dimensional settings where data science increasingly operates. Particle filters degenerate as dimension grows, while standard variational filters impose Gaussian assumptions that misrepresent a system&#x27;s true uncertainty.&lt;&#x2F;p&gt;
-&lt;p&gt;This project develops variational mixture filtering to address this, fitting mixture variational families that capture non-Gaussian, multimodal posteriors while remaining cheap enough to update in real time.&lt;&#x2F;p&gt;
-&lt;p&gt;It will deliver theory for the convergence of mixture flows in variational filtering, scalable filtering methods, and open-source implementations for real-time Bayesian data science.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://olaronning.github.io/projects/ddsa25-fellowship/">&lt;p&gt;Real-time Bayesian inference remains difficult in the non-Gaussian, high-dimensional settings where data science increasingly operates. Particle filters degenerate as dimension grows, while standard variational filters impose Gaussian assumptions that misrepresent a system&#39;s true uncertainty.&lt;/p&gt;
+&lt;p&gt;This project develops variational mixture filtering to address this, fitting mixture variational families that capture non-Gaussian, multimodal posteriors while remaining cheap enough to update in real time.&lt;/p&gt;
+&lt;p&gt;It will deliver theory for the convergence of mixture flows in variational filtering, scalable filtering methods, and open-source implementations for real-time Bayesian data science.&lt;/p&gt;
 </content>
         
     </entry>
@@ -134,11 +118,7 @@ crediting LiDAR measurements with more new information than they carry.&lt;&#x2F
         <updated>2025-04-24T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://olaronning.github.io/publications/elboing-stein/"/>
@@ -159,7 +139,7 @@ dard data sets. In addition, SMI requires considerably fewer particles than SVGD
 to accurately estimate uncertainty for small BNNs. The synergistic combination of
 NSVGD, ELBO optimization and user-specified guides establishes a promising
 approach towards variational Bayesian inference in the case of tall and wide data.
-This is the abstract of the sample publication.&lt;&#x2F;p&gt;
+This is the abstract of the sample publication.&lt;/p&gt;
 </content>
         
     </entry>
@@ -169,17 +149,13 @@ This is the abstract of the sample publication.&lt;&#x2F;p&gt;
         <updated>2024-01-03T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://olaronning.github.io/publications/ai-manufacturing/"/>
         <id>https://olaronning.github.io/publications/ai-manufacturing/</id>
         
-        <content type="html" xml:base="https://olaronning.github.io/publications/ai-manufacturing/">&lt;p&gt;This action research article presents a case study of a global manufacturing company deploying artificial intelligence (AI) to develop capabilities and enhance decision-making. This study explores considerations and trade-offs involved in introducing AI into daily operations, leading up to the decision to develop AI capabilities in-house or outsource them. The case study offers in-depth technical descriptions of model selection, dataset creation, model adoption, model training and evaluation while addressing organizational obstacles and decisionmaking processes. The study’s findings highlight the importance of collaboration between technical experts, business leaders, and end-users, as well as the interaction and collaboration between AI systems and human employees in the workplace. The article contributes a practical perspective on AI implementation in manufacturing, emphasizing the need to balance in-house capability development with external acquisition. Although the case study company managed to create an in-house model, factors such as implementation, debugging, data requirements, training time, and performance led to outsourcing the capabilities. However, making this informed decision required capabilities and insights that were acquired through practical work. Consequently, although inhouse development can be challenging, it can also enhance organizational capabilities and provide the necessary knowledge to make informed decisions about future development or outsourcing.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://olaronning.github.io/publications/ai-manufacturing/">&lt;p&gt;This action research article presents a case study of a global manufacturing company deploying artificial intelligence (AI) to develop capabilities and enhance decision-making. This study explores considerations and trade-offs involved in introducing AI into daily operations, leading up to the decision to develop AI capabilities in-house or outsource them. The case study offers in-depth technical descriptions of model selection, dataset creation, model adoption, model training and evaluation while addressing organizational obstacles and decisionmaking processes. The study’s findings highlight the importance of collaboration between technical experts, business leaders, and end-users, as well as the interaction and collaboration between AI systems and human employees in the workplace. The article contributes a practical perspective on AI implementation in manufacturing, emphasizing the need to balance in-house capability development with external acquisition. Although the case study company managed to create an in-house model, factors such as implementation, debugging, data requirements, training time, and performance led to outsourcing the capabilities. However, making this informed decision required capabilities and insights that were acquired through practical work. Consequently, although inhouse development can be challenging, it can also enhance organizational capabilities and provide the necessary knowledge to make informed decisions about future development or outsourcing.&lt;/p&gt;
 </content>
         
     </entry>
@@ -189,17 +165,13 @@ This is the abstract of the sample publication.&lt;&#x2F;p&gt;
         <updated>2026-04-02T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://olaronning.github.io/publications/ad-nested/"/>
         <id>https://olaronning.github.io/publications/ad-nested/</id>
         
-        <content type="html" xml:base="https://olaronning.github.io/publications/ad-nested/">&lt;p&gt;We present a technique for applying reverse mode automatic differentiation (AD) on a non-recursive second-order functional array language that supports nested parallelism and is primarily aimed at efficient GPU execution. The key idea is to eliminate the need for a tape by relying on redundant execution to bring into each new scope all program variables that may be needed by the differentiated code. Efficient execution is enabled by the observation that perfectly nested scopes do not introduce re-execution and that such perfect nests can be readily produced by application of known compiler trans- formations. Our technique differentiates loops and bulk-parallel operators—e.g., map, reduce(-by-index), scan, and scatter—by specific rewrite rules and aggressively optimizes the resulting nested-parallel code. We report an evaluation that compares with established AD solutions and demonstrates competitive performance on ten common benchmarks from recent applied AD literature.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://olaronning.github.io/publications/ad-nested/">&lt;p&gt;We present a technique for applying reverse mode automatic differentiation (AD) on a non-recursive second-order functional array language that supports nested parallelism and is primarily aimed at efficient GPU execution. The key idea is to eliminate the need for a tape by relying on redundant execution to bring into each new scope all program variables that may be needed by the differentiated code. Efficient execution is enabled by the observation that perfectly nested scopes do not introduce re-execution and that such perfect nests can be readily produced by application of known compiler trans- formations. Our technique differentiates loops and bulk-parallel operators—e.g., map, reduce(-by-index), scan, and scatter—by specific rewrite rules and aggressively optimizes the resulting nested-parallel code. We report an evaluation that compares with established AD solutions and demonstrates competitive performance on ten common benchmarks from recent applied AD literature.&lt;/p&gt;
 </content>
         
     </entry>
@@ -209,11 +181,7 @@ This is the abstract of the sample publication.&lt;&#x2F;p&gt;
         <updated>2021-09-29T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://olaronning.github.io/publications/sequence-recon/"/>
@@ -228,17 +196,13 @@ This is the abstract of the sample publication.&lt;&#x2F;p&gt;
         <updated>2021-09-23T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://olaronning.github.io/publications/von-mises-torus/"/>
         <id>https://olaronning.github.io/publications/von-mises-torus/</id>
         
-        <content type="html" xml:base="https://olaronning.github.io/publications/von-mises-torus/">&lt;p&gt;Probabilistic programming languages (PPLs) are at the interface between statistics and the theory of programming languages. PPLs formulate statistical models as stochastic programs that enable automatic inference algorithms and optimization. Pyro and its sibling NumPyro are PPLs built on top of the deep learning frameworks PyTorch and Jax, respectively, providing simple interfaces for inference using efficient implementations of Hamiltonian Monte Carlo (HMC), the No-U-Turn Sampler (NUTS), and Stochastic Variational Inference (SVI). The Sine von Mises distribution and its skewed variant are toroidal distributions relevant to protein bioinformatics. We demonstrate the use of the skewed Sine von Mises distribution by modeling dihedral angles of proteins using a Bayesian mixture model inferred using NUTS, exploiting NumPyro&#x27;s facilities for automatic enumeration.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://olaronning.github.io/publications/von-mises-torus/">&lt;p&gt;Probabilistic programming languages (PPLs) are at the interface between statistics and the theory of programming languages. PPLs formulate statistical models as stochastic programs that enable automatic inference algorithms and optimization. Pyro and its sibling NumPyro are PPLs built on top of the deep learning frameworks PyTorch and Jax, respectively, providing simple interfaces for inference using efficient implementations of Hamiltonian Monte Carlo (HMC), the No-U-Turn Sampler (NUTS), and Stochastic Variational Inference (SVI). The Sine von Mises distribution and its skewed variant are toroidal distributions relevant to protein bioinformatics. We demonstrate the use of the skewed Sine von Mises distribution by modeling dihedral angles of proteins using a Bayesian mixture model inferred using NUTS, exploiting NumPyro&#39;s facilities for automatic enumeration.&lt;/p&gt;
 </content>
         
     </entry>
@@ -248,17 +212,13 @@ This is the abstract of the sample publication.&lt;&#x2F;p&gt;
         <updated>2018-11-01T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://olaronning.github.io/publications/ellipsis-resolution/"/>
         <id>https://olaronning.github.io/publications/ellipsis-resolution/</id>
         
-        <content type="html" xml:base="https://olaronning.github.io/publications/ellipsis-resolution/">&lt;p&gt;Sluicing resolution is the task of identifying the antecedent to a question ellipsis. Antecedents are often sentential constituents, and previous work has therefore relied on syntactic parsing, together with complex linguistic features. A recent model instead used partial parsing as an auxiliary task in sequential neural network architectures to inject syntactic information. We explore the linguistic information being brought to bear by such networks, both by defining subsets of the data exhibiting relevant linguistic characteristics, and by examining the internal representations of the network. Both perspectives provide evidence for substantial linguistic knowledge being deployed by the neural networks.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://olaronning.github.io/publications/ellipsis-resolution/">&lt;p&gt;Sluicing resolution is the task of identifying the antecedent to a question ellipsis. Antecedents are often sentential constituents, and previous work has therefore relied on syntactic parsing, together with complex linguistic features. A recent model instead used partial parsing as an auxiliary task in sequential neural network architectures to inject syntactic information. We explore the linguistic information being brought to bear by such networks, both by defining subsets of the data exhibiting relevant linguistic characteristics, and by examining the internal representations of the network. Both perspectives provide evidence for substantial linguistic knowledge being deployed by the neural networks.&lt;/p&gt;
 </content>
         
     </entry>
@@ -268,17 +228,13 @@ This is the abstract of the sample publication.&lt;&#x2F;p&gt;
         <updated>2018-06-01T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://olaronning.github.io/publications/sluicing/"/>
         <id>https://olaronning.github.io/publications/sluicing/</id>
         
-        <content type="html" xml:base="https://olaronning.github.io/publications/sluicing/">&lt;p&gt;Sluice resolution in English is the problem of finding antecedents of wh-fronted ellipses. Previous work has relied on handcrafted features over syntax trees that scale poorly to other languages and domains; in particular, to dialogue, which is one of the most interesting applications of sluice resolution. Syntactic information is arguably important for sluice resolution, but we show that multi-task learning with partial parsing as auxiliary tasks effectively closes the gap and buys us an additional 9% error reduction over previous work. Since we are not directly relying on features from partial parsers, our system is more robust to domain shifts, giving a 26% error reduction on embedded sluices in dialogue.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://olaronning.github.io/publications/sluicing/">&lt;p&gt;Sluice resolution in English is the problem of finding antecedents of wh-fronted ellipses. Previous work has relied on handcrafted features over syntax trees that scale poorly to other languages and domains; in particular, to dialogue, which is one of the most interesting applications of sluice resolution. Syntactic information is arguably important for sluice resolution, but we show that multi-task learning with partial parsing as auxiliary tasks effectively closes the gap and buys us an additional 9% error reduction over previous work. Since we are not directly relying on features from partial parsers, our system is more robust to domain shifts, giving a 26% error reduction on embedded sluices in dialogue.&lt;/p&gt;
 </content>
         
     </entry>
